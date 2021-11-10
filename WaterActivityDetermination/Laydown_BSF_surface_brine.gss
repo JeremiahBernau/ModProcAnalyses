@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<GSS version="1">
+  <info>
+    <ctime>20210418010832</ctime>
+    <mtime>20211022001818</mtime>
+    <comments />
+  </info>
+  <config>
+    <properties checklimits="false" fontname="Arial" fontsize="10" omithidden="false" omitlessthan="false" omitzero="false" protected="false" showunits="true" significantdigits="4" vardisplay="name" varorientation="columns" />
+    <mixvals MixByVolume="true" MixEqualProportion="true" MixSaveAsSample="false" MixScaleResultAs="2" />
+    <calcheader />
+    <calctrailer />
+    <widths data="22.333333" mix="20.000000" name="20.000000" rj="8.000000" rv="20.000000" sj="8.000000" sv="20.000000" unit="15.000000" />
+    <tolerances replicate="5.000000" standard="10.000000" />
+  </config>
+  <data>
+    <thermo>%PROGRAMFILES%\Gwb\Gtdata\thermo.tdat</thermo>
+    <limits>%PROGRAMFILES%\Gwb\Gtdata\WaterQualityRegs.dat</limits>
+    <conductivity>%PROGRAMFILES%\Gwb\Gtdata\conductivity-USGS.dat</conductivity>
+  </data>
+  <decouple />
+  <elements>
+    <element mw="40.080000" name="Calcium" />
+    <element mw="35.453000" name="Chlorine" />
+    <element mw="24.305000" name="Magnesium" />
+    <element mw="39.098300" name="Potassium" />
+    <element mw="22.989800" name="Sodium" />
+    <element mw="32.060000" name="Sulfur" />
+  </elements>
+  <SpeciesEquivalents>
+    <species name="Mg++">
+      <speceq dCoef="2.000000" dMw="65.617300" espec="Mg2OH+++" nCharge="3" />
+      <speceq dCoef="4.000000" dMw="165.249200" espec="Mg4(OH)4++++" nCharge="4" />
+      <speceq dCoef="1.000000" dMw="41.312300" espec="MgOH+" nCharge="1" />
+    </species>
+    <species name="SO4--">
+      <speceq dCoef="1.000000" dMw="98.073400" espec="H2SO4" nCharge="0" />
+      <speceq dCoef="1.000000" dMw="97.065500" espec="HSO4-" nCharge="-1" />
+    </species>
+    <species name="Cl-">
+      <speceq dCoef="1.000000" dMw="36.460900" espec="HCl" nCharge="0" />
+    </species>
+    <species name="K+">
+      <speceq dCoef="1.000000" dMw="56.105600" espec="KOH" nCharge="0" />
+    </species>
+    <species name="Ca++">
+      <speceq dCoef="1.000000" dMw="57.087300" espec="CaOH+" nCharge="1" />
+    </species>
+    <species name="Na+">
+      <speceq dCoef="1.000000" dMw="39.997100" espec="NaOH" nCharge="0" />
+    </species>
+  </SpeciesEquivalents>
+  <variables>
+    <variable class="Chemical parameters" dimension="Text" sv="Sample ID" unit="text">Sample ID</variable>
+    <variable class="Chemical parameters" dimension="Date" sv="Date" unit="">Date</variable>
+    <variable class="Physical parameters" color="963634" dimension="Density" size="14" sv="Density" symbol="degree" unit="g/cm3">
+      Density
+      <composition>
+        <elemental />
+        <species />
+      </composition>
+    </variable>
+    <variable class="Chemical parameters" color="963634" conserved="true" dimension="Temperature" size="14" sv="Temperature" symbol="blot" unit="C">
+      Temperature
+      <composition>
+        <elemental />
+        <species />
+      </composition>
+    </variable>
+    <variable charge="2.000000" class="Basis species" color="963634" conserved="true" moleweight="24.305000" size="14" symbol="delta" unit="wt%">
+      Mg++
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Magnesium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Mg++" />
+          <component coef="1.000000" name="Mg++" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="-2.000000" class="Basis species" color="963634" conserved="true" moleweight="96.057600" size="14" symbol="mobius" unit="wt%">
+      SO4--
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Sulfur" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="SO4--" />
+          <component coef="1.000000" name="SO4--" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="-1.000000" class="Basis species" color="963634" conserved="true" moleweight="35.453000" size="14" symbol="pentagram" unit="wt%">
+      Cl-
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Chlorine" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Cl-" />
+          <component coef="1.000000" name="Cl-" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="1.000000" class="Basis species" color="963634" conserved="true" moleweight="39.098300" size="14" symbol="caution" unit="wt%">
+      K+
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Potassium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="K+" />
+          <component coef="1.000000" name="K+" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="2.000000" class="Basis species" color="963634" conserved="true" moleweight="40.080000" size="14" symbol="circle" unit="wt%">
+      Ca++
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Calcium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Ca++" />
+          <component coef="1.000000" name="Ca++" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="1.000000" class="Basis species" color="963634" conserved="true" moleweight="22.989800" size="14" symbol="del" unit="wt%">
+      Na+
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Sodium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Na+" />
+          <component coef="1.000000" name="Na+" />
+        </species>
+      </composition>
+    </variable>
+    <variable calculated="true" class="Chemical parameters" color="963634" dimension="Activity" native_unit="activity" size="14" symbol="square" unit="activity">
+      Activity of H2O
+      <composition>
+        <elemental />
+        <species />
+      </composition>
+    </variable>
+    <variable calculated="true" class="Mineral saturation" color="963634" log="true" native_unit="Q/K" size="14" symbol="triangle" unit="Q/K">
+      Halite
+      <composition>
+        <elemental />
+        <species>
+          <component coef="1.000000" name="Na+" />
+          <component coef="1.000000" name="Cl-" />
+        </species>
+      </composition>
+    </variable>
+    <variable calculated="true" class="Chemical parameters" color="963634" conserved="true" dimension="Concentration" native_unit="molal" size="14" symbol="diamond" unit="molal">
+      Ionic strength
+      <composition>
+        <elemental />
+        <species />
+      </composition>
+    </variable>
+    <variable calculated="true" class="Physical parameters" color="963634" dimension="Density" native_unit="g/cm3" size="14" symbol="yield" unit="g/cm3">
+      Fluid density
+      <composition>
+        <elemental />
+        <species />
+      </composition>
+    </variable>
+  </variables>
+  <samples>
+    <sample color="963634" density="1.000000" selected="true" size="14" smass="1.000000" symbol="circle-n" tds="60000.000000" wmass="0.940000">
+      <quantity variable="0">test</quantity>
+      <quantity variable="2">1</quantity>
+      <quantity variable="3">1</quantity>
+      <quantity variable="4">1</quantity>
+      <quantity variable="5">1</quantity>
+      <quantity variable="6">1</quantity>
+      <quantity variable="7">1</quantity>
+      <quantity variable="8">1</quantity>
+      <quantity variable="9">1</quantity>
+      <quantity calculated="true" variable="10">0.99338861</quantity>
+      <quantity calculated="true" variable="11">-2.997902998717409</quantity>
+      <quantity calculated="true" variable="12">1.6345809</quantity>
+      <quantity calculated="true" variable="13">1.0416234</quantity>
+    </sample>
+    <sample color="963634" density="1.147000" selected="true" size="14" smass="1.000000" symbol="delta" tds="189300.000000" wmass="0.810700">
+      <quantity variable="0">Racetrack</quantity>
+      <quantity variable="1">20170209</quantity>
+      <quantity variable="2">1.147</quantity>
+      <quantity variable="3">9</quantity>
+      <quantity variable="4">0.07000000000000001</quantity>
+      <quantity variable="5">0.4</quantity>
+      <quantity variable="6">10.9</quantity>
+      <quantity variable="7">0.15</quantity>
+      <quantity variable="8">0.17</quantity>
+      <quantity variable="9">7.24</quantity>
+      <quantity calculated="true" variable="10">0.89867106</quantity>
+      <quantity calculated="true" variable="11">-0.8273287486681288</quantity>
+      <quantity calculated="true" variable="12">3.8499861</quantity>
+      <quantity calculated="true" variable="13">1.1403952</quantity>
+    </sample>
+    <sample color="963634" density="1.146000" selected="true" size="14" smass="1.000000" symbol="box" tds="190000.000000" wmass="0.810000">
+      <quantity variable="0">Racetrack</quantity>
+      <quantity variable="1">20170206</quantity>
+      <quantity variable="2">1.146</quantity>
+      <quantity variable="3">5</quantity>
+      <quantity variable="4">0.05</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">11.01</quantity>
+      <quantity variable="7">0.14</quantity>
+      <quantity variable="8">0.17</quantity>
+      <quantity variable="9">7.25</quantity>
+      <quantity calculated="true" variable="10">0.89867181</quantity>
+      <quantity calculated="true" variable="11">-0.8182113023462124</quantity>
+      <quantity calculated="true" variable="12">3.8728783</quantity>
+      <quantity calculated="true" variable="13">1.1418609</quantity>
+    </sample>
+    <sample color="963634" density="1.164000" selected="true" size="14" smass="1.000000" symbol="hourglass" tds="209200.000000" wmass="0.790800">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190325</quantity>
+      <quantity variable="2">1.164</quantity>
+      <quantity variable="3">12</quantity>
+      <quantity variable="4">0.14</quantity>
+      <quantity variable="5">0.41</quantity>
+      <quantity variable="6">12.16</quantity>
+      <quantity variable="7">0.26</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">7.8</quantity>
+      <quantity calculated="true" variable="10">0.89867394</quantity>
+      <quantity calculated="true" variable="11">-0.732077263207123</quantity>
+      <quantity calculated="true" variable="12">4.3290026</quantity>
+      <quantity calculated="true" variable="13">1.1561697</quantity>
+    </sample>
+    <sample color="963634" density="1.224000" selected="true" size="14" smass="1.000000" symbol="caution-cross" tds="252000.000000" wmass="0.748000">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190709</quantity>
+      <quantity variable="2">1.224</quantity>
+      <quantity variable="3">18</quantity>
+      <quantity variable="4">0.92</quantity>
+      <quantity variable="5">0.68</quantity>
+      <quantity variable="6">15.25</quantity>
+      <quantity variable="7">1.69</quantity>
+      <quantity variable="8">0.09</quantity>
+      <quantity variable="9">6.57</quantity>
+      <quantity calculated="true" variable="10">0.89868791</quantity>
+      <quantity calculated="true" variable="11">-0.6904347474192223</quantity>
+      <quantity calculated="true" variable="12">5.2554742</quantity>
+      <quantity calculated="true" variable="13">1.1906521</quantity>
+    </sample>
+    <sample color="963634" density="1.224000" selected="true" size="14" smass="1.000000" symbol="box" tds="250200.000000" wmass="0.749800">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190715</quantity>
+      <quantity variable="2">1.224</quantity>
+      <quantity variable="3">21</quantity>
+      <quantity variable="4">0.83</quantity>
+      <quantity variable="5">0.64</quantity>
+      <quantity variable="6">15.15</quantity>
+      <quantity variable="7">1.43</quantity>
+      <quantity variable="8">0.09</quantity>
+      <quantity variable="9">6.88</quantity>
+      <quantity calculated="true" variable="10">0.89869871</quantity>
+      <quantity calculated="true" variable="11">-0.6761511293297081</quantity>
+      <quantity calculated="true" variable="12">5.2266827</quantity>
+      <quantity calculated="true" variable="13">1.1880089</quantity>
+    </sample>
+    <sample color="963634" density="1.186000" selected="true" size="14" smass="1.000000" symbol="box-s" tds="225600.000000" wmass="0.774400">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200210</quantity>
+      <quantity variable="2">1.186</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.31</quantity>
+      <quantity variable="5">0.47</quantity>
+      <quantity variable="6">13.43</quantity>
+      <quantity variable="7">0.47</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">7.76</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.6758260907211024</quantity>
+      <quantity calculated="true" variable="12">4.7239711</quantity>
+      <quantity calculated="true" variable="13">1.17113</quantity>
+    </sample>
+    <sample color="963634" density="1.167000" selected="true" size="14" smass="1.000000" symbol="cross" tds="216100.000000" wmass="0.783900">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20161006</quantity>
+      <quantity variable="2">1.167</quantity>
+      <quantity variable="3">6</quantity>
+      <quantity variable="4">0.05</quantity>
+      <quantity variable="5">0.41</quantity>
+      <quantity variable="6">12.41</quantity>
+      <quantity variable="7">0.11</quantity>
+      <quantity variable="8">0.17</quantity>
+      <quantity variable="9">8.460000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867111</quantity>
+      <quantity calculated="true" variable="11">-0.6741656084063387</quantity>
+      <quantity calculated="true" variable="12">4.5469945</quantity>
+      <quantity calculated="true" variable="13">1.1635491</quantity>
+    </sample>
+    <sample color="963634" density="1.177000" selected="true" size="14" smass="1.000000" symbol="pentagram" tds="221700.000000" wmass="0.778300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190215</quantity>
+      <quantity variable="2">1.177</quantity>
+      <quantity variable="3">3</quantity>
+      <quantity variable="4">0.18</quantity>
+      <quantity variable="5">0.36</quantity>
+      <quantity variable="6">12.93</quantity>
+      <quantity variable="7">0.39</quantity>
+      <quantity variable="8">0.1</quantity>
+      <quantity variable="9">8.210000000000001</quantity>
+      <quantity calculated="true" variable="10">0.8986742599999999</quantity>
+      <quantity calculated="true" variable="11">-0.6634549166600655</quantity>
+      <quantity calculated="true" variable="12">4.6853153</quantity>
+      <quantity calculated="true" variable="13">1.1690679</quantity>
+    </sample>
+    <sample color="963634" density="1.201000" selected="true" size="14" smass="1.000000" symbol="caution-n" tds="227300.000000" wmass="0.772700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190715</quantity>
+      <quantity variable="2">1.201</quantity>
+      <quantity variable="3">27</quantity>
+      <quantity variable="4">0.11</quantity>
+      <quantity variable="5">0.39</quantity>
+      <quantity variable="6">13.93</quantity>
+      <quantity variable="7">0.21</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">7.94</quantity>
+      <quantity calculated="true" variable="10">0.89872727</quantity>
+      <quantity calculated="true" variable="11">-0.6633762859020508</quantity>
+      <quantity calculated="true" variable="12">4.6744079</quantity>
+      <quantity calculated="true" variable="13">1.1664602</quantity>
+    </sample>
+    <sample color="963634" density="1.191000" selected="true" size="14" smass="1.000000" symbol="circle-n" tds="229100.000000" wmass="0.770900">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190624</quantity>
+      <quantity variable="2">1.191</quantity>
+      <quantity variable="3">32</quantity>
+      <quantity variable="4">0.11</quantity>
+      <quantity variable="5">0.51</quantity>
+      <quantity variable="6">13.66</quantity>
+      <quantity variable="7">0.21</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">8.27</quantity>
+      <quantity calculated="true" variable="10">0.89875754</quantity>
+      <quantity calculated="true" variable="11">-0.660402056224779</quantity>
+      <quantity calculated="true" variable="12">4.7072138</quantity>
+      <quantity calculated="true" variable="13">1.1660356</quantity>
+    </sample>
+    <sample color="963634" density="1.185000" selected="true" size="14" smass="1.000000" symbol="mobius-n" tds="228300.000000" wmass="0.771700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200203</quantity>
+      <quantity variable="2">1.185</quantity>
+      <quantity variable="3">6</quantity>
+      <quantity variable="4">0.33</quantity>
+      <quantity variable="5">0.45</quantity>
+      <quantity variable="6">13.49</quantity>
+      <quantity variable="7">0.48</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">7.96</quantity>
+      <quantity calculated="true" variable="10">0.89867111</quantity>
+      <quantity calculated="true" variable="11">-0.6591325651798832</quantity>
+      <quantity calculated="true" variable="12">4.8148832</quantity>
+      <quantity calculated="true" variable="13">1.1739832</quantity>
+    </sample>
+    <sample color="963634" density="1.196000" selected="true" size="14" smass="1.000000" symbol="del-n" tds="227600.000000" wmass="0.772400">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190709</quantity>
+      <quantity variable="2">1.196</quantity>
+      <quantity variable="3">24</quantity>
+      <quantity variable="4">0.11</quantity>
+      <quantity variable="5">0.41</quantity>
+      <quantity variable="6">13.96</quantity>
+      <quantity variable="7">0.21</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">7.93</quantity>
+      <quantity calculated="true" variable="10">0.89871188</quantity>
+      <quantity calculated="true" variable="11">-0.6587505302275759</quantity>
+      <quantity calculated="true" variable="12">4.6933305</quantity>
+      <quantity calculated="true" variable="13">1.1677987</quantity>
+    </sample>
+    <sample color="963634" density="1.190000" selected="true" size="14" smass="1.000000" symbol="caution-s" tds="229300.000000" wmass="0.770700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200302</quantity>
+      <quantity variable="2">1.19</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.33</quantity>
+      <quantity variable="5">0.46</quantity>
+      <quantity variable="6">13.57</quantity>
+      <quantity variable="7">0.49</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">7.96</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.6562948872680696</quantity>
+      <quantity calculated="true" variable="12">4.8337446</quantity>
+      <quantity calculated="true" variable="13">1.1745749</quantity>
+    </sample>
+    <sample color="963634" density="1.189000" selected="true" size="14" smass="1.000000" symbol="delta-s" tds="229700.000000" wmass="0.770300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200217</quantity>
+      <quantity variable="2">1.189</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.32</quantity>
+      <quantity variable="5">0.47</quantity>
+      <quantity variable="6">13.66</quantity>
+      <quantity variable="7">0.49</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">7.91</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.6562224225261434</quantity>
+      <quantity calculated="true" variable="12">4.8325325</quantity>
+      <quantity calculated="true" variable="13">1.174644</quantity>
+    </sample>
+    <sample color="963634" density="1.194000" selected="true" size="14" smass="1.000000" symbol="delta-n" tds="228800.000000" wmass="0.771200">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190701</quantity>
+      <quantity variable="2">1.194</quantity>
+      <quantity variable="3">24</quantity>
+      <quantity variable="4">0.11</quantity>
+      <quantity variable="5">0.42</quantity>
+      <quantity variable="6">13.78</quantity>
+      <quantity variable="7">0.21</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">8.210000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89871188</quantity>
+      <quantity calculated="true" variable="11">-0.6486553391153911</quantity>
+      <quantity calculated="true" variable="12">4.7437867</quantity>
+      <quantity calculated="true" variable="13">1.1688022</quantity>
+    </sample>
+    <sample color="963634" density="1.174000" selected="true" size="14" smass="1.000000" symbol="circle" tds="224200.000000" wmass="0.775800">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20170206</quantity>
+      <quantity variable="2">1.174</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.18</quantity>
+      <quantity variable="5">0.33</quantity>
+      <quantity variable="6">13.01</quantity>
+      <quantity variable="7">0.26</quantity>
+      <quantity variable="8">0.1</quantity>
+      <quantity variable="9">8.539999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.6438476610013357</quantity>
+      <quantity calculated="true" variable="12">4.7653465</quantity>
+      <quantity calculated="true" variable="13">1.1702006</quantity>
+    </sample>
+    <sample color="963634" density="1.188000" selected="true" size="14" smass="1.000000" symbol="box-n" tds="229800.000000" wmass="0.770200">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190611</quantity>
+      <quantity variable="2">1.188</quantity>
+      <quantity variable="3">21</quantity>
+      <quantity variable="4">0.11</quantity>
+      <quantity variable="5">0.4</quantity>
+      <quantity variable="6">13.75</quantity>
+      <quantity variable="7">0.2</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">8.369999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89869871</quantity>
+      <quantity calculated="true" variable="11">-0.6365079846749175</quantity>
+      <quantity calculated="true" variable="12">4.7970431</quantity>
+      <quantity calculated="true" variable="13">1.1706919</quantity>
+    </sample>
+    <sample color="963634" density="1.194000" selected="true" size="14" smass="1.000000" symbol="plus" tds="230700.000000" wmass="0.769300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190528</quantity>
+      <quantity variable="2">1.194</quantity>
+      <quantity variable="3">20</quantity>
+      <quantity variable="4">0.09</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">13.89</quantity>
+      <quantity variable="7">0.18</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">8.390000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89869484</quantity>
+      <quantity calculated="true" variable="11">-0.6281229974304685</quantity>
+      <quantity calculated="true" variable="12">4.8224898</quantity>
+      <quantity calculated="true" variable="13">1.1717915</quantity>
+    </sample>
+    <sample color="963634" density="1.190000" selected="true" size="14" smass="1.000000" symbol="circle-plus" tds="228700.000000" wmass="0.771300">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190528</quantity>
+      <quantity variable="2">1.19</quantity>
+      <quantity variable="3">12</quantity>
+      <quantity variable="4">0.08</quantity>
+      <quantity variable="5">0.36</quantity>
+      <quantity variable="6">13.72</quantity>
+      <quantity variable="7">0.16</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">8.42</quantity>
+      <quantity calculated="true" variable="10">0.89867394</quantity>
+      <quantity calculated="true" variable="11">-0.624522816096496</quantity>
+      <quantity calculated="true" variable="12">4.8173144</quantity>
+      <quantity calculated="true" variable="13">1.1726406</quantity>
+    </sample>
+    <sample color="963634" density="1.186000" selected="true" size="14" smass="1.000000" symbol="square" tds="231500.000000" wmass="0.768500">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190216</quantity>
+      <quantity variable="2">1.186</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.15</quantity>
+      <quantity variable="5">0.37</quantity>
+      <quantity variable="6">13.5</quantity>
+      <quantity variable="7">0.37</quantity>
+      <quantity variable="8">0.1</quantity>
+      <quantity variable="9">8.66</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.6135656572819999</quantity>
+      <quantity calculated="true" variable="12">4.9343195</quantity>
+      <quantity calculated="true" variable="13">1.1764685</quantity>
+    </sample>
+    <sample color="963634" density="1.186000" selected="true" size="14" smass="1.000000" symbol="del" tds="232700.000000" wmass="0.767300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20170209</quantity>
+      <quantity variable="2">1.186</quantity>
+      <quantity variable="3">9</quantity>
+      <quantity variable="4">0.2</quantity>
+      <quantity variable="5">0.34</quantity>
+      <quantity variable="6">13.6</quantity>
+      <quantity variable="7">0.28</quantity>
+      <quantity variable="8">0.1</quantity>
+      <quantity variable="9">8.75</quantity>
+      <quantity calculated="true" variable="10">0.89867106</quantity>
+      <quantity calculated="true" variable="11">-0.6076727411780402</quantity>
+      <quantity calculated="true" variable="12">4.9751141</quantity>
+      <quantity calculated="true" variable="13">1.1769399</quantity>
+    </sample>
+    <sample color="963634" density="1.181000" selected="true" size="14" smass="1.000000" symbol="plus" tds="231100.000000" wmass="0.768900">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20161010</quantity>
+      <quantity variable="2">1.181</quantity>
+      <quantity variable="3">12</quantity>
+      <quantity variable="4">0.05</quantity>
+      <quantity variable="5">0.42</quantity>
+      <quantity variable="6">13.36</quantity>
+      <quantity variable="7">0.13</quantity>
+      <quantity variable="8">0.17</quantity>
+      <quantity variable="9">8.98</quantity>
+      <quantity calculated="true" variable="10">0.89867394</quantity>
+      <quantity calculated="true" variable="11">-0.60647072031632</quantity>
+      <quantity calculated="true" variable="12">4.9118068</quantity>
+      <quantity calculated="true" variable="13">1.1746888</quantity>
+    </sample>
+    <sample color="963634" density="1.185000" selected="true" size="14" smass="1.000000" symbol="triangle" tds="234300.000000" wmass="0.765700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190219</quantity>
+      <quantity variable="2">1.185</quantity>
+      <quantity variable="3">2</quantity>
+      <quantity variable="4">0.15</quantity>
+      <quantity variable="5">0.37</quantity>
+      <quantity variable="6">13.7</quantity>
+      <quantity variable="7">0.37</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">8.73</quantity>
+      <quantity calculated="true" variable="10">0.89867603</quantity>
+      <quantity calculated="true" variable="11">-0.5973266546337722</quantity>
+      <quantity calculated="true" variable="12">5.0244124</quantity>
+      <quantity calculated="true" variable="13">1.1802139</quantity>
+    </sample>
+    <sample color="963634" density="1.212000" selected="true" size="14" smass="1.000000" symbol="circle-cross" tds="251600.000000" wmass="0.748400">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190701</quantity>
+      <quantity variable="2">1.212</quantity>
+      <quantity variable="3">23</quantity>
+      <quantity variable="4">0.43</quantity>
+      <quantity variable="5">0.48</quantity>
+      <quantity variable="6">15.17</quantity>
+      <quantity variable="7">0.8100000000000001</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">8.16</quantity>
+      <quantity calculated="true" variable="10">0.89870723</quantity>
+      <quantity calculated="true" variable="11">-0.5932444629070582</quantity>
+      <quantity calculated="true" variable="12">5.3169571</quantity>
+      <quantity calculated="true" variable="13">1.1884519</quantity>
+    </sample>
+    <sample color="963634" density="1.189000" selected="true" size="14" smass="1.000000" symbol="blot" tds="238600.000000" wmass="0.761400">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190217</quantity>
+      <quantity variable="2">1.189</quantity>
+      <quantity variable="3">4</quantity>
+      <quantity variable="4">0.18</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">13.95</quantity>
+      <quantity variable="7">0.38</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">8.859999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867286</quantity>
+      <quantity calculated="true" variable="11">-0.5809191208608856</quantity>
+      <quantity calculated="true" variable="12">5.1341629</quantity>
+      <quantity calculated="true" variable="13">1.1834391</quantity>
+    </sample>
+    <sample color="963634" density="1.199000" selected="true" size="14" smass="1.000000" symbol="pentagram-n" tds="238700.000000" wmass="0.761300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200210</quantity>
+      <quantity variable="2">1.199</quantity>
+      <quantity variable="3">4</quantity>
+      <quantity variable="4">0.13</quantity>
+      <quantity variable="5">0.36</quantity>
+      <quantity variable="6">14.3</quantity>
+      <quantity variable="7">0.23</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">8.720000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867286</quantity>
+      <quantity calculated="true" variable="11">-0.5756472673998884</quantity>
+      <quantity calculated="true" variable="12">5.1189335</quantity>
+      <quantity calculated="true" variable="13">1.1835263</quantity>
+    </sample>
+    <sample color="963634" density="1.198000" selected="true" size="14" smass="1.000000" symbol="cross" tds="243300.000000" wmass="0.756700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190514</quantity>
+      <quantity variable="2">1.198</quantity>
+      <quantity variable="3">23</quantity>
+      <quantity variable="4">0.09</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">14.47</quantity>
+      <quantity variable="7">0.2</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">9.039999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89870723</quantity>
+      <quantity calculated="true" variable="11">-0.5701000526917009</quantity>
+      <quantity calculated="true" variable="12">5.1536483</quantity>
+      <quantity calculated="true" variable="13">1.181384</quantity>
+    </sample>
+    <sample color="963634" density="1.200000" selected="true" size="14" smass="1.000000" symbol="star" tds="244300.000000" wmass="0.755700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190507</quantity>
+      <quantity variable="2">1.2</quantity>
+      <quantity variable="3">20</quantity>
+      <quantity variable="4">0.08</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">14.49</quantity>
+      <quantity variable="7">0.18</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">9.15</quantity>
+      <quantity calculated="true" variable="10">0.89869484</quantity>
+      <quantity calculated="true" variable="11">-0.5591596079830972</quantity>
+      <quantity calculated="true" variable="12">5.202731</quantity>
+      <quantity calculated="true" variable="13">1.1833295</quantity>
+    </sample>
+    <sample color="963634" density="1.193000" selected="true" size="14" smass="1.000000" symbol="star" tds="243000.000000" wmass="0.757000">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20161004</quantity>
+      <quantity variable="2">1.193</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.08</quantity>
+      <quantity variable="5">0.45</quantity>
+      <quantity variable="6">14.08</quantity>
+      <quantity variable="7">0.16</quantity>
+      <quantity variable="8">0.18</quantity>
+      <quantity variable="9">9.35</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.5514997947746146</quantity>
+      <quantity calculated="true" variable="12">5.2456938</quantity>
+      <quantity calculated="true" variable="13">1.1861388</quantity>
+    </sample>
+    <sample color="963634" density="1.192600" selected="true" size="14" smass="1.000000" symbol="box-w" tds="247300.000000" wmass="0.752700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210321</quantity>
+      <quantity variable="2">1.1926</quantity>
+      <quantity variable="3">14</quantity>
+      <quantity variable="4">0.22</quantity>
+      <quantity variable="5">0.37</quantity>
+      <quantity variable="6">14.56</quantity>
+      <quantity variable="7">0.35</quantity>
+      <quantity variable="8">0.1</quantity>
+      <quantity variable="9">9.130000000000001</quantity>
+      <quantity calculated="true" variable="10">0.8986774199999999</quantity>
+      <quantity calculated="true" variable="11">-0.5504325757120342</quantity>
+      <quantity calculated="true" variable="12">5.3309189</quantity>
+      <quantity calculated="true" variable="13">1.1879792</quantity>
+    </sample>
+    <sample color="963634" density="1.185700" selected="true" size="14" smass="1.000000" symbol="pentagram-e" tds="249000.000000" wmass="0.751000">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210320</quantity>
+      <quantity variable="2">1.1857</quantity>
+      <quantity variable="3">16</quantity>
+      <quantity variable="4">0.23</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">14.81</quantity>
+      <quantity variable="7">0.35</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.02</quantity>
+      <quantity calculated="true" variable="10">0.89868209</quantity>
+      <quantity calculated="true" variable="11">-0.5492571855372839</quantity>
+      <quantity calculated="true" variable="12">5.3506839</quantity>
+      <quantity calculated="true" variable="13">1.1887693</quantity>
+    </sample>
+    <sample color="963634" density="1.200000" selected="true" size="14" smass="1.000000" symbol="circle-s" tds="244700.000000" wmass="0.755300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200217</quantity>
+      <quantity variable="2">1.2</quantity>
+      <quantity variable="3">5</quantity>
+      <quantity variable="4">0.12</quantity>
+      <quantity variable="5">0.36</quantity>
+      <quantity variable="6">14.54</quantity>
+      <quantity variable="7">0.23</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.09</quantity>
+      <quantity calculated="true" variable="10">0.89867181</quantity>
+      <quantity calculated="true" variable="11">-0.5446922307668861</quantity>
+      <quantity calculated="true" variable="12">5.2925647</quantity>
+      <quantity calculated="true" variable="13">1.1884927</quantity>
+    </sample>
+    <sample color="963634" density="1.209000" selected="true" size="14" smass="1.000000" symbol="box-cross" tds="253800.000000" wmass="0.746200">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190624</quantity>
+      <quantity variable="2">1.209</quantity>
+      <quantity variable="3">26</quantity>
+      <quantity variable="4">0.2</quantity>
+      <quantity variable="5">0.44</quantity>
+      <quantity variable="6">15.08</quantity>
+      <quantity variable="7">0.37</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">9.140000000000001</quantity>
+      <quantity calculated="true" variable="10">0.8987219</quantity>
+      <quantity calculated="true" variable="11">-0.5443365734555874</quantity>
+      <quantity calculated="true" variable="12">5.4043381</quantity>
+      <quantity calculated="true" variable="13">1.1891528</quantity>
+    </sample>
+    <sample color="963634" density="1.190000" selected="true" size="14" smass="1.000000" symbol="gear-circle" tds="243700.000000" wmass="0.756300">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190325</quantity>
+      <quantity variable="2">1.19</quantity>
+      <quantity variable="3">10</quantity>
+      <quantity variable="4">0.09</quantity>
+      <quantity variable="5">0.35</quantity>
+      <quantity variable="6">14.18</quantity>
+      <quantity variable="7">0.19</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.44</quantity>
+      <quantity calculated="true" variable="10">0.8986717</quantity>
+      <quantity calculated="true" variable="11">-0.5438150568272693</quantity>
+      <quantity calculated="true" variable="12">5.2761937</quantity>
+      <quantity calculated="true" variable="13">1.1861428</quantity>
+    </sample>
+    <sample color="963634" density="1.195000" selected="true" size="14" smass="1.000000" symbol="mobius-e" tds="250200.000000" wmass="0.749800">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210319</quantity>
+      <quantity variable="2">1.195</quantity>
+      <quantity variable="3">13</quantity>
+      <quantity variable="4">0.23</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">14.8</quantity>
+      <quantity variable="7">0.33</quantity>
+      <quantity variable="8">0.1</quantity>
+      <quantity variable="9">9.18</quantity>
+      <quantity calculated="true" variable="10">0.89867553</quantity>
+      <quantity calculated="true" variable="11">-0.5372139462073391</quantity>
+      <quantity calculated="true" variable="12">5.4108305</quantity>
+      <quantity calculated="true" variable="13">1.1908239</quantity>
+    </sample>
+    <sample color="963634" density="1.204000" selected="true" size="14" smass="1.000000" symbol="mobius-s" tds="247100.000000" wmass="0.752900">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200316</quantity>
+      <quantity variable="2">1.204</quantity>
+      <quantity variable="3">11</quantity>
+      <quantity variable="4">0.12</quantity>
+      <quantity variable="5">0.36</quantity>
+      <quantity variable="6">14.54</quantity>
+      <quantity variable="7">0.24</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.32</quantity>
+      <quantity calculated="true" variable="10">0.89867266</quantity>
+      <quantity calculated="true" variable="11">-0.5370117180114186</quantity>
+      <quantity calculated="true" variable="12">5.3434102</quantity>
+      <quantity calculated="true" variable="13">1.1887815</quantity>
+    </sample>
+    <sample color="963634" density="1.210000" selected="true" size="14" smass="1.000000" symbol="caution-se" tds="254600.000000" wmass="0.745400">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20171107</quantity>
+      <quantity variable="2">1.21</quantity>
+      <quantity variable="3">6</quantity>
+      <quantity variable="4">0.36</quantity>
+      <quantity variable="5">0.46</quantity>
+      <quantity variable="6">14.71</quantity>
+      <quantity variable="7">0.7</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.109999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867111</quantity>
+      <quantity calculated="true" variable="11">-0.5364122287697412</quantity>
+      <quantity calculated="true" variable="12">5.5474432</quantity>
+      <quantity calculated="true" variable="13">1.1969016</quantity>
+    </sample>
+    <sample color="963634" density="1.202000" selected="true" size="14" smass="1.000000" symbol="del-s" tds="246700.000000" wmass="0.753300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200302</quantity>
+      <quantity variable="2">1.202</quantity>
+      <quantity variable="3">2</quantity>
+      <quantity variable="4">0.12</quantity>
+      <quantity variable="5">0.37</quantity>
+      <quantity variable="6">14.62</quantity>
+      <quantity variable="7">0.23</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">9.19</quantity>
+      <quantity calculated="true" variable="10">0.89867603</quantity>
+      <quantity calculated="true" variable="11">-0.5334852501231533</quantity>
+      <quantity calculated="true" variable="12">5.3620172</quantity>
+      <quantity calculated="true" variable="13">1.1910832</quantity>
+    </sample>
+    <sample color="963634" density="1.211000" selected="true" size="14" smass="1.000000" symbol="pentagram" tds="259700.000000" wmass="0.740300">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20200406</quantity>
+      <quantity variable="2">1.211</quantity>
+      <quantity variable="3">11</quantity>
+      <quantity variable="4">0.38</quantity>
+      <quantity variable="5">0.45</quantity>
+      <quantity variable="6">15.23</quantity>
+      <quantity variable="7">0.74</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.039999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867266</quantity>
+      <quantity calculated="true" variable="11">-0.5243649511280479</quantity>
+      <quantity calculated="true" variable="12">5.6460046</quantity>
+      <quantity calculated="true" variable="13">1.1997909</quantity>
+    </sample>
+    <sample color="963634" density="1.209000" selected="true" size="14" smass="1.000000" symbol="box-plus" tds="254500.000000" wmass="0.745500">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190514</quantity>
+      <quantity variable="2">1.209</quantity>
+      <quantity variable="3">18</quantity>
+      <quantity variable="4">0.15</quantity>
+      <quantity variable="5">0.46</quantity>
+      <quantity variable="6">15</quantity>
+      <quantity variable="7">0.32</quantity>
+      <quantity variable="8">0.16</quantity>
+      <quantity variable="9">9.359999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89868791</quantity>
+      <quantity calculated="true" variable="11">-0.5240956770071474</quantity>
+      <quantity calculated="true" variable="12">5.4785219</quantity>
+      <quantity calculated="true" variable="13">1.1928098</quantity>
+    </sample>
+    <sample color="963634" density="1.205000" selected="true" size="14" smass="1.000000" symbol="caution" tds="250100.000000" wmass="0.749900">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20171107</quantity>
+      <quantity variable="2">1.205</quantity>
+      <quantity variable="3">11</quantity>
+      <quantity variable="4">0.15</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">14.48</quantity>
+      <quantity variable="7">0.27</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.6</quantity>
+      <quantity calculated="true" variable="10">0.89867266</quantity>
+      <quantity calculated="true" variable="11">-0.5239877557490707</quantity>
+      <quantity calculated="true" variable="12">5.4449553</quantity>
+      <quantity calculated="true" variable="13">1.1913912</quantity>
+    </sample>
+    <sample color="963634" density="1.215000" selected="true" size="14" smass="1.000000" symbol="square" tds="267300.000000" wmass="0.732700">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20200413</quantity>
+      <quantity variable="2">1.215</quantity>
+      <quantity variable="3">14</quantity>
+      <quantity variable="4">0.5600000000000001</quantity>
+      <quantity variable="5">0.5</quantity>
+      <quantity variable="6">15.73</quantity>
+      <quantity variable="7">0.99</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">8.82</quantity>
+      <quantity calculated="true" variable="10">0.8986774199999999</quantity>
+      <quantity calculated="true" variable="11">-0.5209271468617367</quantity>
+      <quantity calculated="true" variable="12">5.8169593</quantity>
+      <quantity calculated="true" variable="13">1.2054248</quantity>
+    </sample>
+    <sample color="963634" density="1.199000" selected="true" size="14" smass="1.000000" symbol="bullet" tds="251600.000000" wmass="0.748400">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190225</quantity>
+      <quantity variable="2">1.199</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.16</quantity>
+      <quantity variable="5">0.39</quantity>
+      <quantity variable="6">14.74</quantity>
+      <quantity variable="7">0.38</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.380000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.5206139809734814</quantity>
+      <quantity calculated="true" variable="12">5.4805747</quantity>
+      <quantity calculated="true" variable="13">1.1939561</quantity>
+    </sample>
+    <sample color="963634" density="1.208000" selected="true" size="14" smass="1.000000" symbol="mobius" tds="256600.000000" wmass="0.743400">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20200330</quantity>
+      <quantity variable="2">1.208</quantity>
+      <quantity variable="3">6</quantity>
+      <quantity variable="4">0.27</quantity>
+      <quantity variable="5">0.43</quantity>
+      <quantity variable="6">15.22</quantity>
+      <quantity variable="7">0.52</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">9.08</quantity>
+      <quantity calculated="true" variable="10">0.89867111</quantity>
+      <quantity calculated="true" variable="11">-0.5183810665292388</quantity>
+      <quantity calculated="true" variable="12">5.5848447</quantity>
+      <quantity calculated="true" variable="13">1.1986682</quantity>
+    </sample>
+    <sample color="963634" density="1.208000" selected="true" size="14" smass="1.000000" symbol="blot" tds="257900.000000" wmass="0.742100">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20200420</quantity>
+      <quantity variable="2">1.208</quantity>
+      <quantity variable="3">13</quantity>
+      <quantity variable="4">0.27</quantity>
+      <quantity variable="5">0.33</quantity>
+      <quantity variable="6">15.45</quantity>
+      <quantity variable="7">0.5</quantity>
+      <quantity variable="8">0.1</quantity>
+      <quantity variable="9">9.140000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867553</quantity>
+      <quantity calculated="true" variable="11">-0.5131022365502609</quantity>
+      <quantity calculated="true" variable="12">5.6020352</quantity>
+      <quantity calculated="true" variable="13">1.1975324</quantity>
+    </sample>
+    <sample color="963634" density="1.207000" selected="true" size="14" smass="1.000000" symbol="square-cross" tds="254600.000000" wmass="0.745400">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190507</quantity>
+      <quantity variable="2">1.207</quantity>
+      <quantity variable="3">14</quantity>
+      <quantity variable="4">0.11</quantity>
+      <quantity variable="5">0.43</quantity>
+      <quantity variable="6">15.05</quantity>
+      <quantity variable="7">0.24</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">9.48</quantity>
+      <quantity calculated="true" variable="10">0.8986774199999999</quantity>
+      <quantity calculated="true" variable="11">-0.510831530249005</quantity>
+      <quantity calculated="true" variable="12">5.5135911</quantity>
+      <quantity calculated="true" variable="13">1.1943104</quantity>
+    </sample>
+    <sample color="963634" density="1.202000" selected="true" size="14" smass="1.000000" symbol="yield" tds="252900.000000" wmass="0.747100">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190223</quantity>
+      <quantity variable="2">1.202</quantity>
+      <quantity variable="3">2</quantity>
+      <quantity variable="4">0.16</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">14.88</quantity>
+      <quantity variable="7">0.37</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.390000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867603</quantity>
+      <quantity calculated="true" variable="11">-0.5104963201862288</quantity>
+      <quantity calculated="true" variable="12">5.5380194</quantity>
+      <quantity calculated="true" variable="13">1.1965678</quantity>
+    </sample>
+    <sample color="963634" density="1.208000" selected="true" size="14" smass="1.000000" symbol="pentagram-s" tds="254200.000000" wmass="0.745800">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20200413</quantity>
+      <quantity variable="2">1.208</quantity>
+      <quantity variable="3">13</quantity>
+      <quantity variable="4">0.12</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.11</quantity>
+      <quantity variable="7">0.24</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">9.43</quantity>
+      <quantity calculated="true" variable="10">0.89867553</quantity>
+      <quantity calculated="true" variable="11">-0.5103851145237253</quantity>
+      <quantity calculated="true" variable="12">5.5120071</quantity>
+      <quantity calculated="true" variable="13">1.194303</quantity>
+    </sample>
+    <sample color="963634" density="1.200000" selected="true" size="14" smass="1.000000" symbol="diamond" tds="252900.000000" wmass="0.747100">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20190224</quantity>
+      <quantity variable="2">1.2</quantity>
+      <quantity variable="3">1</quantity>
+      <quantity variable="4">0.16</quantity>
+      <quantity variable="5">0.39</quantity>
+      <quantity variable="6">14.83</quantity>
+      <quantity variable="7">0.38</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.42</quantity>
+      <quantity calculated="true" variable="10">0.8986781700000001</quantity>
+      <quantity calculated="true" variable="11">-0.5099567219643329</quantity>
+      <quantity calculated="true" variable="12">5.5442346</quantity>
+      <quantity calculated="true" variable="13">1.1968464</quantity>
+    </sample>
+    <sample color="963634" density="1.196400" selected="true" size="14" smass="1.000000" symbol="triangle" tds="248700.000000" wmass="0.751300">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20210311</quantity>
+      <quantity variable="2">1.1964</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.07000000000000001</quantity>
+      <quantity variable="5">0.17</quantity>
+      <quantity variable="6">14.85</quantity>
+      <quantity variable="7">0.1</quantity>
+      <quantity variable="8">0.06</quantity>
+      <quantity variable="9">9.619999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.5045145528928338</quantity>
+      <quantity calculated="true" variable="12">5.4501479</quantity>
+      <quantity calculated="true" variable="13">1.1914123</quantity>
+    </sample>
+    <sample color="963634" density="1.207000" selected="true" size="14" smass="1.000000" symbol="del" tds="253700.000000" wmass="0.746300">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20200217</quantity>
+      <quantity variable="2">1.207</quantity>
+      <quantity variable="3">12</quantity>
+      <quantity variable="4">0.08</quantity>
+      <quantity variable="5">0.35</quantity>
+      <quantity variable="6">14.99</quantity>
+      <quantity variable="7">0.17</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">9.640000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867394</quantity>
+      <quantity calculated="true" variable="11">-0.5025568050852047</quantity>
+      <quantity calculated="true" variable="12">5.523252</quantity>
+      <quantity calculated="true" variable="13">1.1942024</quantity>
+    </sample>
+    <sample color="963634" density="1.211000" selected="true" size="14" smass="1.000000" symbol="blot-cross" tds="258400.000000" wmass="0.741600">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190416</quantity>
+      <quantity variable="2">1.211</quantity>
+      <quantity variable="3">11</quantity>
+      <quantity variable="4">0.18</quantity>
+      <quantity variable="5">0.43</quantity>
+      <quantity variable="6">15.21</quantity>
+      <quantity variable="7">0.38</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">9.5</quantity>
+      <quantity calculated="true" variable="10">0.89867266</quantity>
+      <quantity calculated="true" variable="11">-0.4996914964625118</quantity>
+      <quantity calculated="true" variable="12">5.6348195</quantity>
+      <quantity calculated="true" variable="13">1.1986491</quantity>
+    </sample>
+    <sample color="963634" density="1.207000" selected="true" size="14" smass="1.000000" symbol="caution-plus" tds="256800.000000" wmass="0.743200">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190611</quantity>
+      <quantity variable="2">1.207</quantity>
+      <quantity variable="3">18</quantity>
+      <quantity variable="4">0.09</quantity>
+      <quantity variable="5">0.39</quantity>
+      <quantity variable="6">15.15</quantity>
+      <quantity variable="7">0.16</quantity>
+      <quantity variable="8">0.16</quantity>
+      <quantity variable="9">9.73</quantity>
+      <quantity calculated="true" variable="10">0.89868791</quantity>
+      <quantity calculated="true" variable="11">-0.4989042832360577</quantity>
+      <quantity calculated="true" variable="12">5.5673406</quantity>
+      <quantity calculated="true" variable="13">1.1947992</quantity>
+    </sample>
+    <sample color="963634" density="1.198100" selected="true" size="14" smass="1.000000" symbol="circle-w" tds="257300.000000" wmass="0.742700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210322</quantity>
+      <quantity variable="2">1.1981</quantity>
+      <quantity variable="3">3</quantity>
+      <quantity variable="4">0.21</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.33</quantity>
+      <quantity variable="7">0.34</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.359999999999999</quantity>
+      <quantity calculated="true" variable="10">0.8986742599999999</quantity>
+      <quantity calculated="true" variable="11">-0.4963197833772316</quantity>
+      <quantity calculated="true" variable="12">5.6461475</quantity>
+      <quantity calculated="true" variable="13">1.2001896</quantity>
+    </sample>
+    <sample color="963634" density="1.208000" selected="true" size="14" smass="1.000000" symbol="gear" tds="256000.000000" wmass="0.744000">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190318</quantity>
+      <quantity variable="2">1.208</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.12</quantity>
+      <quantity variable="5">0.39</quantity>
+      <quantity variable="6">15.04</quantity>
+      <quantity variable="7">0.27</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.65</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.4952375988208267</quantity>
+      <quantity calculated="true" variable="12">5.6042049</quantity>
+      <quantity calculated="true" variable="13">1.1975155</quantity>
+    </sample>
+    <sample color="963634" density="1.207000" selected="true" size="14" smass="1.000000" symbol="caution-ne" tds="256200.000000" wmass="0.743800">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190225</quantity>
+      <quantity variable="2">1.207</quantity>
+      <quantity variable="3">6</quantity>
+      <quantity variable="4">0.09</quantity>
+      <quantity variable="5">0.34</quantity>
+      <quantity variable="6">15.16</quantity>
+      <quantity variable="7">0.23</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.67</quantity>
+      <quantity calculated="true" variable="10">0.89867111</quantity>
+      <quantity calculated="true" variable="11">-0.4876295536837366</quantity>
+      <quantity calculated="true" variable="12">5.6233954</quantity>
+      <quantity calculated="true" variable="13">1.1983146</quantity>
+    </sample>
+    <sample color="963634" density="1.204800" selected="true" size="14" smass="1.000000" symbol="del-e" tds="258800.000000" wmass="0.741200">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210314</quantity>
+      <quantity variable="2">1.2048</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.18</quantity>
+      <quantity variable="5">0.37</quantity>
+      <quantity variable="6">15.24</quantity>
+      <quantity variable="7">0.32</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.66</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.4872018564676674</quantity>
+      <quantity calculated="true" variable="12">5.6856853</quantity>
+      <quantity calculated="true" variable="13">1.1999842</quantity>
+    </sample>
+    <sample color="963634" density="1.207000" selected="true" size="14" smass="1.000000" symbol="mobius" tds="258600.000000" wmass="0.741400">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20180102</quantity>
+      <quantity variable="2">1.207</quantity>
+      <quantity variable="3">4</quantity>
+      <quantity variable="4">0.15</quantity>
+      <quantity variable="5">0.36</quantity>
+      <quantity variable="6">15.5</quantity>
+      <quantity variable="7">0.27</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.460000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867286</quantity>
+      <quantity calculated="true" variable="11">-0.4847046694766743</quantity>
+      <quantity calculated="true" variable="12">5.6788997</quantity>
+      <quantity calculated="true" variable="13">1.2010488</quantity>
+    </sample>
+    <sample color="963634" density="1.207000" selected="true" size="14" smass="1.000000" symbol="square-plus" tds="257600.000000" wmass="0.742400">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190430</quantity>
+      <quantity variable="2">1.207</quantity>
+      <quantity variable="3">10</quantity>
+      <quantity variable="4">0.08</quantity>
+      <quantity variable="5">0.42</quantity>
+      <quantity variable="6">15</quantity>
+      <quantity variable="7">0.18</quantity>
+      <quantity variable="8">0.16</quantity>
+      <quantity variable="9">9.92</quantity>
+      <quantity calculated="true" variable="10">0.8986717</quantity>
+      <quantity calculated="true" variable="11">-0.4846125073129427</quantity>
+      <quantity calculated="true" variable="12">5.6489895</quantity>
+      <quantity calculated="true" variable="13">1.1982782</quantity>
+    </sample>
+    <sample color="963634" density="1.196800" selected="true" size="14" smass="1.000000" symbol="delta-e" tds="260700.000000" wmass="0.739300">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210313</quantity>
+      <quantity variable="2">1.1968</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.21</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.48</quantity>
+      <quantity variable="7">0.34</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.550000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.4841639468486643</quantity>
+      <quantity calculated="true" variable="12">5.7249645</quantity>
+      <quantity calculated="true" variable="13">1.2016631</quantity>
+    </sample>
+    <sample color="963634" density="1.202600" selected="true" size="14" smass="1.000000" symbol="circle-e" tds="261000.000000" wmass="0.739000">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210312</quantity>
+      <quantity variable="2">1.2026</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.2</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.48</quantity>
+      <quantity variable="7">0.33</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.6</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.4813307026115232</quantity>
+      <quantity calculated="true" variable="12">5.7361268</quantity>
+      <quantity calculated="true" variable="13">1.2019284</quantity>
+    </sample>
+    <sample color="963634" density="1.211000" selected="true" size="14" smass="1.000000" symbol="box-sw" tds="269500.000000" wmass="0.730500">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20171113</quantity>
+      <quantity variable="2">1.211</quantity>
+      <quantity variable="3">4</quantity>
+      <quantity variable="4">0.42</quantity>
+      <quantity variable="5">0.46</quantity>
+      <quantity variable="6">15.9</quantity>
+      <quantity variable="7">0.82</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.24</quantity>
+      <quantity calculated="true" variable="10">0.89867286</quantity>
+      <quantity calculated="true" variable="11">-0.4798614720705556</quantity>
+      <quantity calculated="true" variable="12">5.9458372</quantity>
+      <quantity calculated="true" variable="13">1.2107898</quantity>
+    </sample>
+    <sample color="963634" density="1.199100" selected="true" size="14" smass="1.000000" symbol="caution-e" tds="262400.000000" wmass="0.737600">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210318</quantity>
+      <quantity variable="2">1.1991</quantity>
+      <quantity variable="3">12</quantity>
+      <quantity variable="4">0.23</quantity>
+      <quantity variable="5">0.39</quantity>
+      <quantity variable="6">15.36</quantity>
+      <quantity variable="7">0.34</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.81</quantity>
+      <quantity calculated="true" variable="10">0.89867394</quantity>
+      <quantity calculated="true" variable="11">-0.4790485853041587</quantity>
+      <quantity calculated="true" variable="12">5.7726692</quantity>
+      <quantity calculated="true" variable="13">1.2018232</quantity>
+    </sample>
+    <sample color="963634" density="1.211800" selected="true" size="14" smass="1.000000" symbol="hourglass" tds="267800.000000" wmass="0.732200">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20210415</quantity>
+      <quantity variable="2">1.2118</quantity>
+      <quantity variable="3">6</quantity>
+      <quantity variable="4">0.37</quantity>
+      <quantity variable="5">0.46</quantity>
+      <quantity variable="6">15.86</quantity>
+      <quantity variable="7">0.59</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.390000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867111</quantity>
+      <quantity calculated="true" variable="11">-0.4761951024066795</quantity>
+      <quantity calculated="true" variable="12">5.9061151</quantity>
+      <quantity calculated="true" variable="13">1.2086234</quantity>
+    </sample>
+    <sample color="963634" density="1.209400" selected="true" size="14" smass="1.000000" symbol="del-w" tds="262100.000000" wmass="0.737900">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210401</quantity>
+      <quantity variable="2">1.2094</quantity>
+      <quantity variable="3">3</quantity>
+      <quantity variable="4">0.23</quantity>
+      <quantity variable="5">0.39</quantity>
+      <quantity variable="6">15.57</quantity>
+      <quantity variable="7">0.34</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.57</quantity>
+      <quantity calculated="true" variable="10">0.8986742599999999</quantity>
+      <quantity calculated="true" variable="11">-0.475440058382691</quantity>
+      <quantity calculated="true" variable="12">5.7885397</quantity>
+      <quantity calculated="true" variable="13">1.2044691</quantity>
+    </sample>
+    <sample color="963634" density="1.207000" selected="true" size="14" smass="1.000000" symbol="blot-plus" tds="261300.000000" wmass="0.738700">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190409</quantity>
+      <quantity variable="2">1.207</quantity>
+      <quantity variable="3">13</quantity>
+      <quantity variable="4">0.11</quantity>
+      <quantity variable="5">0.4</quantity>
+      <quantity variable="6">15.29</quantity>
+      <quantity variable="7">0.24</quantity>
+      <quantity variable="8">0.15</quantity>
+      <quantity variable="9">9.94</quantity>
+      <quantity calculated="true" variable="10">0.89867553</quantity>
+      <quantity calculated="true" variable="11">-0.4753595472563078</quantity>
+      <quantity calculated="true" variable="12">5.7308817</quantity>
+      <quantity calculated="true" variable="13">1.2005096</quantity>
+    </sample>
+    <sample color="963634" density="1.208800" selected="true" size="14" smass="1.000000" symbol="diamond" tds="265000.000000" wmass="0.735000">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20210325</quantity>
+      <quantity variable="2">1.2088</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.27</quantity>
+      <quantity variable="5">0.43</quantity>
+      <quantity variable="6">15.64</quantity>
+      <quantity variable="7">0.43</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.609999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.4735895739407657</quantity>
+      <quantity calculated="true" variable="12">5.8443869</quantity>
+      <quantity calculated="true" variable="13">1.2058016</quantity>
+    </sample>
+    <sample color="963634" density="1.209400" selected="true" size="14" smass="1.000000" symbol="box-se" tds="266800.000000" wmass="0.733200">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210410</quantity>
+      <quantity variable="2">1.2094</quantity>
+      <quantity variable="3">14</quantity>
+      <quantity variable="4">0.27</quantity>
+      <quantity variable="5">0.43</quantity>
+      <quantity variable="6">15.84</quantity>
+      <quantity variable="7">0.41</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.609999999999999</quantity>
+      <quantity calculated="true" variable="10">0.8986774199999999</quantity>
+      <quantity calculated="true" variable="11">-0.4735784471102408</quantity>
+      <quantity calculated="true" variable="12">5.8510592</quantity>
+      <quantity calculated="true" variable="13">1.2049848</quantity>
+    </sample>
+    <sample color="963634" density="1.204000" selected="true" size="14" smass="1.000000" symbol="box-n" tds="263000.000000" wmass="0.737000">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20171218</quantity>
+      <quantity variable="2">1.204</quantity>
+      <quantity variable="3">1</quantity>
+      <quantity variable="4">0.26</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.46</quantity>
+      <quantity variable="7">0.4</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.68</quantity>
+      <quantity calculated="true" variable="10">0.8986781700000001</quantity>
+      <quantity calculated="true" variable="11">-0.4721881845988684</quantity>
+      <quantity calculated="true" variable="12">5.8338954</quantity>
+      <quantity calculated="true" variable="13">1.2058686</quantity>
+    </sample>
+    <sample color="963634" density="1.211400" selected="true" size="14" smass="1.000000" symbol="pentagram-w" tds="267300.000000" wmass="0.732700">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210414</quantity>
+      <quantity variable="2">1.2114</quantity>
+      <quantity variable="3">8</quantity>
+      <quantity variable="4">0.29</quantity>
+      <quantity variable="5">0.48</quantity>
+      <quantity variable="6">15.83</quantity>
+      <quantity variable="7">0.47</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.529999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867074</quantity>
+      <quantity calculated="true" variable="11">-0.4714208828443954</quantity>
+      <quantity calculated="true" variable="12">5.8852173</quantity>
+      <quantity calculated="true" variable="13">1.2075181</quantity>
+    </sample>
+    <sample color="963634" density="1.210200" selected="true" size="14" smass="1.000000" symbol="box-nw" tds="268000.000000" wmass="0.732000">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210412</quantity>
+      <quantity variable="2">1.2102</quantity>
+      <quantity variable="3">10</quantity>
+      <quantity variable="4">0.31</quantity>
+      <quantity variable="5">0.46</quantity>
+      <quantity variable="6">15.88</quantity>
+      <quantity variable="7">0.47</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.56</quantity>
+      <quantity calculated="true" variable="10">0.8986717</quantity>
+      <quantity calculated="true" variable="11">-0.4701871242148696</quantity>
+      <quantity calculated="true" variable="12">5.9007969</quantity>
+      <quantity calculated="true" variable="13">1.2074607</quantity>
+    </sample>
+    <sample color="963634" density="1.211000" selected="true" size="14" smass="1.000000" symbol="bullet" tds="268400.000000" wmass="0.731600">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20210401</quantity>
+      <quantity variable="2">1.211</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.33</quantity>
+      <quantity variable="5">0.49</quantity>
+      <quantity variable="6">15.86</quantity>
+      <quantity variable="7">0.48</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.550000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.4686921136959397</quantity>
+      <quantity calculated="true" variable="12">5.9241096</quantity>
+      <quantity calculated="true" variable="13">1.208831</quantity>
+    </sample>
+    <sample color="963634" density="1.205000" selected="true" size="14" smass="1.000000" symbol="degree" tds="263500.000000" wmass="0.736500">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20171114</quantity>
+      <quantity variable="2">1.205</quantity>
+      <quantity variable="3">9</quantity>
+      <quantity variable="4">0.15</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.69</quantity>
+      <quantity variable="7">0.28</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.720000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867106</quantity>
+      <quantity calculated="true" variable="11">-0.4675178089710654</quantity>
+      <quantity calculated="true" variable="12">5.7971728</quantity>
+      <quantity calculated="true" variable="13">1.2038121</quantity>
+    </sample>
+    <sample color="963634" density="1.205200" selected="true" size="14" smass="1.000000" symbol="box-e" tds="264000.000000" wmass="0.736000">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210311</quantity>
+      <quantity variable="2">1.2052</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.21</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.63</quantity>
+      <quantity variable="7">0.32</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.75</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.4665769531903778</quantity>
+      <quantity calculated="true" variable="12">5.8328578</quantity>
+      <quantity calculated="true" variable="13">1.2049125</quantity>
+    </sample>
+    <sample color="963634" density="1.190000" selected="true" size="14" smass="1.000000" symbol="gear-degree" tds="262100.000000" wmass="0.737900">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20190401</quantity>
+      <quantity variable="2">1.19</quantity>
+      <quantity variable="3">9</quantity>
+      <quantity variable="4">0.09</quantity>
+      <quantity variable="5">0.37</quantity>
+      <quantity variable="6">15.53</quantity>
+      <quantity variable="7">0.22</quantity>
+      <quantity variable="8">0.14</quantity>
+      <quantity variable="9">9.859999999999999</quantity>
+      <quantity calculated="true" variable="10">0.89867106</quantity>
+      <quantity calculated="true" variable="11">-0.4658531463884591</quantity>
+      <quantity calculated="true" variable="12">5.7685742</quantity>
+      <quantity calculated="true" variable="13">1.2025738</quantity>
+    </sample>
+    <sample color="963634" density="1.202700" selected="true" size="14" smass="1.000000" symbol="delta-w" tds="264200.000000" wmass="0.735800">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210325</quantity>
+      <quantity variable="2">1.2027</quantity>
+      <quantity variable="3">4</quantity>
+      <quantity variable="4">0.21</quantity>
+      <quantity variable="5">0.38</quantity>
+      <quantity variable="6">15.67</quantity>
+      <quantity variable="7">0.34</quantity>
+      <quantity variable="8">0.11</quantity>
+      <quantity variable="9">9.710000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867286</quantity>
+      <quantity calculated="true" variable="11">-0.4643145328942212</quantity>
+      <quantity calculated="true" variable="12">5.8493219</quantity>
+      <quantity calculated="true" variable="13">1.2060407</quantity>
+    </sample>
+    <sample color="963634" density="1.208000" selected="true" size="14" smass="1.000000" symbol="degree" tds="265300.000000" wmass="0.734700">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20200316</quantity>
+      <quantity variable="2">1.208</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.19</quantity>
+      <quantity variable="5">0.44</quantity>
+      <quantity variable="6">15.41</quantity>
+      <quantity variable="7">0.37</quantity>
+      <quantity variable="8">0.16</quantity>
+      <quantity variable="9">9.960000000000001</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.4630791485381853</quantity>
+      <quantity calculated="true" variable="12">5.8726158</quantity>
+      <quantity calculated="true" variable="13">1.2060685</quantity>
+    </sample>
+    <sample color="963634" density="1.208900" selected="true" size="14" smass="1.000000" symbol="caution-nw" tds="271600.000000" wmass="0.728400">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210411</quantity>
+      <quantity variable="2">1.2089</quantity>
+      <quantity variable="3">16</quantity>
+      <quantity variable="4">0.28</quantity>
+      <quantity variable="5">0.45</quantity>
+      <quantity variable="6">15.98</quantity>
+      <quantity variable="7">0.42</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.91</quantity>
+      <quantity calculated="true" variable="10">0.89868209</quantity>
+      <quantity calculated="true" variable="11">-0.4543883902582292</quantity>
+      <quantity calculated="true" variable="12">5.9873142</quantity>
+      <quantity calculated="true" variable="13">1.2084663</quantity>
+    </sample>
+    <sample color="963634" density="1.210200" selected="true" size="14" smass="1.000000" symbol="caution-w" tds="271200.000000" wmass="0.728800">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210415</quantity>
+      <quantity variable="2">1.2102</quantity>
+      <quantity variable="3">9</quantity>
+      <quantity variable="4">0.27</quantity>
+      <quantity variable="5">0.45</quantity>
+      <quantity variable="6">16.07</quantity>
+      <quantity variable="7">0.44</quantity>
+      <quantity variable="8">0.13</quantity>
+      <quantity variable="9">9.76</quantity>
+      <quantity calculated="true" variable="10">0.89867106</quantity>
+      <quantity calculated="true" variable="11">-0.4507128463565995</quantity>
+      <quantity calculated="true" variable="12">6.0022006</quantity>
+      <quantity calculated="true" variable="13">1.2106517</quantity>
+    </sample>
+    <sample color="963634" density="1.211000" selected="true" size="14" smass="1.000000" symbol="mobius-w" tds="272800.000000" wmass="0.727200">
+      <quantity variable="0">SLD</quantity>
+      <quantity variable="1">20210413</quantity>
+      <quantity variable="2">1.211</quantity>
+      <quantity variable="3">9</quantity>
+      <quantity variable="4">0.31</quantity>
+      <quantity variable="5">0.47</quantity>
+      <quantity variable="6">16.07</quantity>
+      <quantity variable="7">0.49</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.82</quantity>
+      <quantity calculated="true" variable="10">0.89867106</quantity>
+      <quantity calculated="true" variable="11">-0.4473488640402701</quantity>
+      <quantity calculated="true" variable="12">6.0522952</quantity>
+      <quantity calculated="true" variable="13">1.2120791</quantity>
+    </sample>
+    <sample color="963634" density="1.208400" selected="true" size="14" smass="1.000000" symbol="yield" tds="272600.000000" wmass="0.727400">
+      <quantity variable="0">BSF</quantity>
+      <quantity variable="1">20210322</quantity>
+      <quantity variable="2">1.2084</quantity>
+      <quantity variable="3">7</quantity>
+      <quantity variable="4">0.25</quantity>
+      <quantity variable="5">0.43</quantity>
+      <quantity variable="6">16.2</quantity>
+      <quantity variable="7">0.42</quantity>
+      <quantity variable="8">0.12</quantity>
+      <quantity variable="9">9.84</quantity>
+      <quantity calculated="true" variable="10">0.89867076</quantity>
+      <quantity calculated="true" variable="11">-0.4393073914850926</quantity>
+      <quantity calculated="true" variable="12">6.057943</quantity>
+      <quantity calculated="true" variable="13">1.2125865</quantity>
+    </sample>
+  </samples>
+</GSS>

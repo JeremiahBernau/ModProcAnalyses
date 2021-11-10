@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<GSS version="1">
+  <info>
+    <ctime>20211101191458</ctime>
+    <mtime>20211101191945</mtime>
+    <comments />
+  </info>
+  <config>
+    <properties checklimits="false" fontname="Arial" fontsize="10" omithidden="false" omitlessthan="false" omitzero="false" protected="false" showunits="true" significantdigits="4" vardisplay="name" varorientation="rows" />
+    <mixvals MixByVolume="true" MixEqualProportion="true" MixSaveAsSample="false" MixScaleResultAs="2" />
+    <calcheader />
+    <calctrailer />
+    <widths data="20.000000" mix="20.000000" name="20.000000" rj="8.000000" rv="20.000000" sj="8.000000" sv="20.000000" unit="15.000000" />
+    <tolerances replicate="5.000000" standard="10.000000" />
+  </config>
+  <data>
+    <thermo>%PROGRAMFILES%\Gwb\Gtdata\thereda_2020_gwb_jan19.tdat</thermo>
+    <limits>%PROGRAMFILES%\Gwb\Gtdata\WaterQualityRegs.dat</limits>
+    <conductivity>%PROGRAMFILES%\Gwb\Gtdata\conductivity-USGS.dat</conductivity>
+  </data>
+  <decouple />
+  <elements>
+    <element mw="40.078000" name="Calcium" />
+    <element mw="35.453000" name="Chlorine" />
+    <element mw="24.305000" name="Magnesium" />
+    <element mw="39.098300" name="Potassium" />
+    <element mw="22.989800" name="Sodium" />
+    <element mw="87.620000" name="Strontium" />
+    <element mw="32.065000" name="Sulfur" />
+  </elements>
+  <SpeciesEquivalents>
+    <species name="Mg++">
+      <speceq dCoef="1.000000" dMw="41.312300" espec="Mg(OH)+" nCharge="1" />
+      <speceq dCoef="3.000000" dMw="140.944200" espec="Mg3(OH)4++" nCharge="2" />
+    </species>
+    <species name="SO4--">
+      <speceq dCoef="1.000000" dMw="97.070500" espec="HSO4-" nCharge="-1" />
+    </species>
+  </SpeciesEquivalents>
+  <variables>
+    <variable class="Chemical parameters" dimension="Text" sv="Sample ID" unit="text">Sample ID</variable>
+    <variable charge="2.000000" class="Basis species" color="963634" conserved="true" moleweight="40.078000" size="14" symbol="circle" unit="g/kg">
+      Ca++
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Calcium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Ca++" />
+          <component coef="1.000000" name="Ca++" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="2.000000" class="Basis species" color="963634" conserved="true" moleweight="24.305000" size="14" symbol="delta" unit="g/kg">
+      Mg++
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Magnesium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Mg++" />
+          <component coef="1.000000" name="Mg++" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="1.000000" class="Basis species" color="963634" conserved="true" moleweight="22.989800" size="14" symbol="del" unit="g/kg">
+      Na+
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Sodium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Na+" />
+          <component coef="1.000000" name="Na+" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="1.000000" class="Basis species" color="963634" conserved="true" moleweight="39.098300" size="14" symbol="caution" unit="g/kg">
+      K+
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Potassium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="K+" />
+          <component coef="1.000000" name="K+" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="-2.000000" class="Basis species" color="963634" conserved="true" moleweight="96.062600" size="14" symbol="degree" unit="g/kg">
+      SO4--
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Sulfur" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="SO4--" />
+          <component coef="1.000000" name="SO4--" />
+        </species>
+      </composition>
+    </variable>
+    <variable charge="-1.000000" class="Basis species" color="963634" conserved="true" moleweight="35.453000" size="14" symbol="mobius" unit="g/kg">
+      Cl-
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Chlorine" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Cl-" />
+          <component coef="1.000000" name="Cl-" />
+        </species>
+      </composition>
+    </variable>
+    <variable class="Chemical parameters" color="963634" dimension="pH" maximum="8.5" minimum="6.5" notes="NSDWR" size="14" sv="pH" symbol="pentagram" unit="pH">
+      pH
+      <composition>
+        <elemental />
+        <species />
+      </composition>
+    </variable>
+    <variable charge="2.000000" class="Basis species" color="963634" conserved="true" moleweight="87.620000" size="14" symbol="square" unit="g/kg">
+      Sr++
+      <composition>
+        <elemental>
+          <element coef="1.000000" name="Strontium" />
+        </elemental>
+        <species>
+          <component coef="-1.000000" name="Sr++" />
+          <component coef="1.000000" name="Sr++" />
+        </species>
+      </composition>
+    </variable>
+    <variable calculated="true" class="Chemical parameters" color="963634" dimension="Activity" native_unit="activity" size="14" symbol="blot" unit="activity">
+      Activity of H2O
+      <composition>
+        <elemental />
+        <species />
+      </composition>
+    </variable>
+  </variables>
+  <samples>
+    <sample color="963634" density="1.205618" selected="true" size="14" smass="1.000000" symbol="box" tds="272713.000000" wmass="0.727287">
+      <quantity variable="0">Dead Sea Sirota et al, 2016</quantity>
+      <quantity variable="1">15.64</quantity>
+      <quantity variable="2">39.1</quantity>
+      <quantity variable="3">23.13</quantity>
+      <quantity variable="4">6.16</quantity>
+      <quantity variable="6">188.4</quantity>
+      <quantity variable="8">0.283</quantity>
+      <quantity calculated="true" variable="9">0.6658988300000001</quantity>
+    </sample>
+  </samples>
+</GSS>

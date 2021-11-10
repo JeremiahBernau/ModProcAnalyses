@@ -1,0 +1,14 @@
+1. (AirPresSub) Subtract air pressure and adjust so that it shows water level relative to surface
+2. (VerticalOffsetCor) Shift data vertically, adjusting for installation depth and groundwater density
+3. (JoinStandardizeData) Standardize the dataset so they all have the same columns. 
+4. (EquivalentHeadCalculation) Correct to equivalent head by adjusting to halite saturated density
+5. (BarometricEfficiency) Do barometric efficiency calculation and adjustment
+6. (ThermalEfficiency) Determine thermal efficiency - plot in addition to other water level change to understand what water level might be if temperature was constant
+
+Specific Analyses
+7. SpecficiYieldEstimation
+8. RapidWaterLevelRise
+
+Make figures
+9. EquivalentHeadSupPlot
+10. HistWaterLevel_SupPlot
